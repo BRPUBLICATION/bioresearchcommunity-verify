@@ -1,0 +1,108 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const verifyBtn = document.getElementById('verify-btn');
+    const certInput = document.getElementById('cert-id');
+    const resultContainer = document.getElementById('result-container');
+
+    // Sample data for demonstration
+    const mockData = {
+        'BRC-2024-001': {
+            name: 'Abhishek Bihari',
+            course: 'Advanced Bioinformatics Workshop',
+            date: 'March 15, 2024',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRC-2024-002': {
+            name: 'John Doe',
+            course: 'Molecular Biology Fundamentals',
+            date: 'April 02, 2024',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        }
+    };
+
+    const handleVerify = () => {
+        const id = certInput.value.trim().toUpperCase();
+        
+        if (!id) {
+            alert('Please enter a Certificate ID');
+            return;
+        }
+
+        // Show loading state
+        verifyBtn.disabled = true;
+        verifyBtn.innerHTML = '<span>Verifying...</span>';
+        
+        // Simulate network delay
+        setTimeout(() => {
+            const data = mockData[id];
+            
+            if (data) {
+                showResult(data, id);
+            } else {
+                showError();
+            }
+            
+            verifyBtn.disabled = false;
+            verifyBtn.innerHTML = '<span>Verify Now</span> <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+        }, 1500);
+    };
+
+    const showResult = (data, id) => {
+        resultContainer.innerHTML = `
+            <div class="result-card">
+                <div class="status-badge">✓ ${data.status}</div>
+                <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem;">Credential Details</h3>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">Verification for ID: ${id}</p>
+                
+                <div class="result-grid">
+                    <div class="result-item">
+                        <label>Candidate Name</label>
+                        <span>${data.name}</span>
+                    </div>
+                    <div class="result-item">
+                        <label>Certification Name</label>
+                        <span>${data.course}</span>
+                    </div>
+                    <div class="result-item">
+                        <label>Issue Date</label>
+                        <span>${data.date}</span>
+                    </div>
+                    <div class="result-item">
+                        <label>Issuing Authority</label>
+                        <span>${data.issuer}</span>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--card-border); font-size: 0.8rem; color: var(--text-muted);">
+                    This certificate is a digital record verified by Bioresearch Community. 
+                    Any tampering with this record is strictly prohibited.
+                </div>
+            </div>
+        `;
+        
+        resultContainer.classList.remove('hidden');
+        resultContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
+    const showError = () => {
+        resultContainer.innerHTML = `
+            <div class="result-card" style="border-color: rgba(239, 68, 68, 0.3);">
+                <div class="status-badge" style="background: rgba(239, 68, 68, 0.1); color: #ef4444; border-color: rgba(239, 68, 68, 0.2);">✕ Not Found</div>
+                <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem;">No Record Found</h3>
+                <p style="color: var(--text-muted);">We couldn't find any certificate matching the ID you provided. Please double-check the ID and try again.</p>
+                <div style="margin-top: 1.5rem;">
+                    <button onclick="document.getElementById('cert-id').focus()" style="background: rgba(255,255,255,0.05); color: #fff; padding: 0.75rem 1.5rem; font-size: 0.9rem;">Try Another ID</button>
+                </div>
+            </div>
+        `;
+        resultContainer.classList.remove('hidden');
+        resultContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
+    verifyBtn.addEventListener('click', handleVerify);
+    
+    certInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handleVerify();
+    });
+});

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official certificate verification page for Bioresearch Community. Verify the authenticity of BRC certificates, diplomas, and awards.">
+    <title>Verify Certificate | Bioresearch Community</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&family=Crimson+Pro:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="blob-container">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob-secondary"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bio">Bio</span><span class="logo-research">Research</span><span class="logo-community"> Community</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Verify</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="verify-hero">
+            <div class="content-wrapper">
+                <h1 id="page-title">Certificate Verification</h1>
+                <p class="subtitle">Securely validate credentials issued by Bioresearch Community</p>
+                
+                <div class="verify-card" id="verification-card">
+                    <div class="search-box">
+                        <label for="cert-id" class="sr-only">Certificate ID</label>
+                        <input type="text" id="cert-id" placeholder="Enter Certificate ID (e.g. BRC-2024-XXXX)" autocomplete="off">
+                        <button id="verify-btn" type="button">
+                            <span>Verify Now</span>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="result-container" class="hidden">
+                    <!-- Results will be injected here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Bioresearch Community. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Security</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
