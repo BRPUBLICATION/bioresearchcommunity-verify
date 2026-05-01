@@ -18,6 +18,69 @@ document.addEventListener('DOMContentLoaded', () => {
             date: 'April 02, 2024',
             status: 'Verified',
             issuer: 'Bioresearch Community'
+        },
+        'BRCDP2500AL01': {
+            name: 'Marwan Reddy Chinnam',
+            course: 'Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCDP2500AL02': {
+            name: 'Susmita Pranav Godbole',
+            course: 'Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCDP2500AL03': {
+            name: 'Prajat Suhasik Jambhulkar',
+            course: 'Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCDP2500AL04': {
+            name: 'Nimesh Dhakal',
+            course: 'Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCDP2500AL05': {
+            name: 'Gajula Nitish Kumar',
+            course: 'Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCDP2500AL06': {
+            name: 'Dina Bandari',
+            course: 'Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCDP2500AL07': {
+            name: 'Daniel',
+            course: 'Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCDP2500AL08': {
+            name: 'Koustav Kundu',
+            course: 'Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCDP2500AL09': {
+            name: 'Name not provided',
+            course: 'Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
         }
     };
 
@@ -65,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span>${data.course}</span>
                     </div>
                     <div class="result-item">
-                        <label>Issue Date</label>
+                        <label>Year of Completion</label>
                         <span>${data.date}</span>
                     </div>
                     <div class="result-item">
