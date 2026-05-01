@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="result-card">
                 <div class="status-badge">✓ ${data.status}</div>
                 <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem;">Credential Details</h3>
-                <p style="color: var(--text-muted); margin-bottom: 2rem;">Verification for ID: ${id}</p>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">This credential has been verified successfully.</p>
                 
                 <div class="result-grid">
                     <div class="result-item">
