@@ -5,20 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Sample data for demonstration
     const mockData = {
-        'BRC-2024-001': {
-            name: 'Abhishek Bihari',
-            course: 'Advanced Bioinformatics Workshop',
-            date: 'March 15, 2024',
-            status: 'Verified',
-            issuer: 'Bioresearch Community'
-        },
-        'BRC-2024-002': {
-            name: 'John Doe',
-            course: 'Molecular Biology Fundamentals',
-            date: 'April 02, 2024',
-            status: 'Verified',
-            issuer: 'Bioresearch Community'
-        },
+        
         'BRCDP2500AL01': {
             name: 'Marwan Reddy Chinnam',
             course: 'Diploma in AI, ML & Robotics in Agriculture',
