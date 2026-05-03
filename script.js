@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             issuer: 'Bioresearch Community'
         },
         'BRCDP2500AL06': {
-            name: 'Dina Bhandhari',
+            name: 'Dina Bhandari',
             course: 'Diploma in AI, ML & Robotics in Agriculture',
             date: '2025',
             status: 'Verified',
