@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Sample data for demonstration
     const mockData = {
-        
         'BRCDP2500AL01': {
             name: 'Marwan Reddy Chinnam',
             course: 'Diploma in AI, ML & Robotics in Agriculture',
@@ -42,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             issuer: 'Bioresearch Community'
         },
         'BRCDP2500AL06': {
-            name: 'Dina Bhandari',
+            name: 'Dina Bandari',
             course: 'Diploma in AI, ML & Robotics in Agriculture',
             date: '2025',
             status: 'Verified',
@@ -62,9 +61,129 @@ document.addEventListener('DOMContentLoaded', () => {
             status: 'Verified',
             issuer: 'Bioresearch Community'
         },
-        'BRCDP2500AL09': {
-            name: 'Name not provided',
-            course: 'Diploma in AI, ML & Robotics in Agriculture',
+        
+        'BRCPGD250AM01': {
+            name: 'Dr. Udaykumar Nidoni',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM02': {
+            name: 'Dr. Sharanagouda Hiregoudar',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM03': {
+            name: 'Dr. P. F. Mathad',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM04': {
+            name: 'Dr. Ramappa K T',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM05': {
+            name: 'Dr. Roopa Bai R S',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM06': {
+            name: 'Er. Geeta H P',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM07': {
+            name: 'Dr. Jambamma',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM08': {
+            name: 'Dr. Sushilendra',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM09': {
+            name: 'Dr. Sunil Shirwal',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM10': {
+            name: 'Dr. Murali M.',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM11': {
+            name: 'Dr. Ragavendra Veerammanavar',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM12': {
+            name: 'Dr. Devanand Maski',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM13': {
+            name: 'Dr. Manjunath',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM14': {
+            name: 'Dr. Rajkumar R Hallidoddi',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM15': {
+            name: 'Dr. Prasad Kulkarni',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM16': {
+            name: 'Er. Satish V K',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM17': {
+            name: 'Er. Megha',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
+        },
+        'BRCPGD250AM18': {
+            name: 'Er. Gautam',
+            course: 'PG Diploma in AI, ML & Robotics in Agriculture',
             date: '2025',
             status: 'Verified',
             issuer: 'Bioresearch Community'
