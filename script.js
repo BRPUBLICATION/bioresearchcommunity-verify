@@ -187,6 +187,13 @@ document.addEventListener('DOMContentLoaded', () => {
             date: '2025',
             status: 'Verified',
             issuer: 'Bioresearch Community'
+        },
+        'BRCDP2500AL20': {
+            name: 'SUGANDHA KUMARI',
+            course: 'Diploma in Artificial Intelligence (AI), Machine Learning (ML), and Robotics in Agriculture.',
+            date: '2025',
+            status: 'Verified',
+            issuer: 'Bioresearch Community'
         }
     };
 
